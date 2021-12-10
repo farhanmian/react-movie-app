@@ -9,7 +9,7 @@ function Search() {
     
     useEffect(()=> {
         const fetchSearchItem = async ()=> {
-            const res = await fetch(searchValue && ` https://api.themoviedb.org/3/search/multi?api_key=847ab230a96a2f52bc3f647f23dc84a4&language=en-US&query=${searchValue}&page=1&include_adult=true`);
+            const res = await fetch(searchValue && ` https://api.themoviedb.org/3/search/multi?api_key=847ab230a96a2f52bc3f647f23dc84a4&language=en-US&query=${searchValue}&page=1&include_adult=false`);
             const data = await res.json();
             setFetchedData(data.results);
         }
