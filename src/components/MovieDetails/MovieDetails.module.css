@@ -14,10 +14,12 @@
 
 .InnerContainer {
   margin: auto;
-  width: 80%;
+  max-width: 1600px;
+  width: 95%;
   padding: 2rem 1rem;
   background-color: #151f2dc7;
   border-radius: 10px 10px 0 0;
+  box-sizing: border-box;
 }
 
 .Heading {
@@ -161,8 +163,8 @@
 }
 
 .SimilarResults > * {
-  width: 12rem;
-  min-height: 23rem;
+  width: 15rem;
+  min-height: 20rem;
 }
 
 /*////////////////// scroll-bar */
@@ -193,7 +195,11 @@
 @media only screen and (max-width: 1400px) {
   .InnerContainer {
     padding: 2rem 0;
-    width: 85%;
+    width: 95%;
+  }
+  .SimilarResults > * {
+    width: 14rem;
+    min-height: 20rem;
   }
 }
 
@@ -203,6 +209,11 @@
   }
   .Heading {
     font-size: 2rem;
+  }
+  .SimilarResults > * {
+    width: 13rem;
+    max-height: 18rem;
+    min-height: 18rem;
   }
 }
 
@@ -236,8 +247,8 @@
     grid-gap: 5rem 2.5rem;
   }
   .SimilarResults > * {
-    width: 10rem;
-    min-height: 20rem;
+    width: 11rem;
+    min-height: 18rem;
   }
 }
 
@@ -290,6 +301,10 @@
   .TagLine {
     margin-bottom: 2rem;
   }
+  .SimilarResults > * {
+    max-height: 16rem;
+    min-height: 16rem;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -316,7 +331,8 @@
 
 @media only screen and (max-width: 350px) {
   .SimilarResults > * {
-    width: 10rem;
-    min-height: 19rem;
+    width: 12rem;
+    max-height: 16rem;
+    min-height: 16rem;
   }
 }
